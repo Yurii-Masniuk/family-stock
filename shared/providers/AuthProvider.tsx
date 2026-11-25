@@ -1,7 +1,8 @@
 'use client';
 
-import { useAuthStore } from '@/features/stores/auth';
+
 import { useEffect } from 'react';
+import { useAuthStore } from '../stores/auth';
 
 const AuthProvider = ({ children }: { children: React.ReactNode }) => {
     const isAuth = useAuthStore((s) => s.isAuth);
